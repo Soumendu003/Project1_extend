@@ -1,0 +1,78 @@
+33
+42
+bk1 softrectangular 44688	2.52632	2.52632
+bk10a softrectangular 44982	3.17647	3.17647
+bk10b softrectangular 22540	1.15	1.15
+bk10c softrectangular 5831	2.42857	2.42857
+bk11 softrectangular 20825	1.47059	1.47059
+bk12 softrectangular 56840	0.344828	0.344828
+bk13 softrectangular 69580	0.28169	0.28169
+bk14a softrectangular 23324	1.64706	1.64706
+bk14b softrectangular 34986	2.47059	2.47059
+bk14c softrectangular 19159	1.35294	1.35294
+bk15a softrectangular 31654	0.447368	0.447368
+bk15b softrectangular 39984	0.354167	0.354167
+bk16 softrectangular 14994	0.944444	0.944444
+bk17a softrectangular 67522	2.03846	2.03846
+bk17b softrectangular 36946	0.896552	0.896552
+bk18 softrectangular 36946	0.896552	0.896552
+bk19 softrectangular 9996	0.705882	0.705882
+bk2 softrectangular 39102	0.452381	0.452381
+bk20 softrectangular 63700	0.52	0.52
+bk21 softrectangular 44100	2.25	2.25
+bk3 softrectangular 41895	0.422222	0.422222
+bk4 softrectangular 74480	4.21053	4.21053
+bk5a softrectangular 18620	0.95	0.95
+bk5b softrectangular 23275	1.31579	1.31579
+bk5c softrectangular 30723	0.575758	0.575758
+bk6 softrectangular 41895	0.422222	0.422222
+bk7 softrectangular 17836	1.85714	1.85714
+bk8a softrectangular 44100	1	1
+bk8b softrectangular 47628	0.333333	0.333333
+bk9a softrectangular 21658	1.52941	1.52941
+bk9b softrectangular 14161	1	1
+bk9c softrectangular 42483	3	3
+bk9d softrectangular 9996	1.41667	1.41667
+
+VSS terminal
+VDD terminal
+P9 terminal
+P8 terminal
+P7 terminal
+P6 terminal
+P5 terminal
+P4 terminal
+P37 terminal
+P36 terminal
+POW@0 terminal
+POW@1 terminal
+P35 terminal
+P34 terminal
+P33 terminal
+P32 terminal
+P31 terminal
+P30 terminal
+P3 terminal
+P29 terminal
+P28 terminal
+P27 terminal
+P26 terminal
+P25 terminal
+P24 terminal
+P23 terminal
+P22 terminal
+P21 terminal
+P20 terminal
+P2 terminal
+P19 terminal
+P18 terminal
+P17 terminal
+GND@0 terminal
+GND@1 terminal
+P16 terminal
+P15 terminal
+P14 terminal
+P13 terminal
+P12 terminal
+P11 terminal
+P10 terminal
