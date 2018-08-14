@@ -4,7 +4,7 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
     int i,j,N,tot_pin,deg,cnt=0;
     fscanf(fp1,"%d",&N);
     fscanf(fp1,"%d",&tot_pin);
-    printf("\n No of Net=%d\tNo of Pin=%d",N,tot_pin);
+    //printf("\n No of Net=%d\tNo of Pin=%d",N,tot_pin);
     Net* net_list=(Net*)calloc(N,sizeof(Net));
     char* str=(char*)calloc(50,sizeof(char));
     while(cnt<N)
@@ -25,7 +25,7 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
                 fscanf(fp1,"%s",str);
                 if(str[0]=='b' && str[1]=='k')
                 {
-                    printf("\n Pin Detected=%s",str);
+                    //printf("\n Pin Detected=%s",str);
                     i++;
                     net_list[cnt].no_of_bk++;
                     j=0;
@@ -38,7 +38,7 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
                     }
                     name[j]='\0';
                     j=search_block(bk_list,0,B-1,name);
-                    printf("\n Value of j=%d",j);
+                   // printf("\n Value of j=%d",j);
                     insert_bk_component(net_list,cnt,j);
                 }
                 else if(str[0]=='G')
@@ -60,7 +60,7 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
                 else if(str[0]=='N')
                 {
                     i++;
-                    printf("\n Pad Detected");
+                    //printf("\n Pad Detected");
                     net_list[cnt].pad=true;
                 }
             }

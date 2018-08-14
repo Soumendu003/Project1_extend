@@ -41,7 +41,7 @@ typedef struct net_tier_com Net_Tier_Component;
 struct net_tier_com{
     int tier_index;
     int bk_count;
-    int total_wire_length;
+    double total_wire_length;
     Block_Component* bk_ptr;
 };
 typedef struct net Net;

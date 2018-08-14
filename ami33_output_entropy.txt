@@ -8,8 +8,8 @@
  Min area for each tier=549313.274569
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=84
-At End Total Number of MIV after Compromised FM=84
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=111
+Time Taken to execute Compromized FM:0.016000
 
  Total Area of all the blocks =1156449.000000
 
@@ -19,7 +19,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =387202636.521351
+ TWL Calculated =383994880.518398
 
 ***********************************************************************************************
 
@@ -30,8 +30,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=520402.049138
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=84
-At End Total Number of MIV after Compromised FM=84
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=111
+Time Taken to execute Compromized FM:0.036000
 
  Total Area of all the blocks =1156449.000000
 
@@ -41,7 +41,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =387202636.521351
+ TWL Calculated =383994880.518398
 
 ***********************************************************************************************
 
@@ -52,8 +52,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=491490.821554
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=84
-At End Total Number of MIV after Compromised FM=84
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=111
+Time Taken to execute Compromized FM:0.041000
 
  Total Area of all the blocks =1156449.000000
 
@@ -63,7 +63,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =387202636.521351
+ TWL Calculated =383994880.518398
 
 ***********************************************************************************************
 
@@ -74,8 +74,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=462579.598277
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=84
-At End Total Number of MIV after Compromised FM=84
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=111
+Time Taken to execute Compromized FM:0.040000
 
  Total Area of all the blocks =1156449.000000
 
@@ -85,7 +85,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =387202636.521351
+ TWL Calculated =383994880.518398
 
 ***********************************************************************************************
 
@@ -96,8 +96,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=433668.375000
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=84
-At End Total Number of MIV after Compromised FM=84
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=111
+Time Taken to execute Compromized FM:0.035000
 
  Total Area of all the blocks =1156449.000000
 
@@ -107,7 +107,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =387202636.521351
+ TWL Calculated =383994880.518398
 
 ***********************************************************************************************
 
@@ -118,8 +118,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=366208.849713
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=140
-At End Total Number of MIV after Compromised FM=140
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=192
+Time Taken to execute Compromized FM:0.037000
 
  Total Area of all the blocks =1156449.000000
 
@@ -130,7 +130,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =268168549.840033
+ TWL Calculated =264067839.433465
 
 ***********************************************************************************************
 
@@ -141,8 +141,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=346934.699426
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=140
-At End Total Number of MIV after Compromised FM=140
-Time Taken to execute Compromized FM:0.003000
+At End Total Number of MIV after Compromised FM=192
+Time Taken to execute Compromized FM:0.034000
 
  Total Area of all the blocks =1156449.000000
 
@@ -153,7 +153,7 @@ Time Taken to execute Compromized FM:0.003000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =268168549.840033
+ TWL Calculated =264067839.433465
 
 ***********************************************************************************************
 
@@ -164,8 +164,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=327660.547702
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=140
-At End Total Number of MIV after Compromised FM=140
-Time Taken to execute Compromized FM:0.002000
+At End Total Number of MIV after Compromised FM=192
+Time Taken to execute Compromized FM:0.033000
 
  Total Area of all the blocks =1156449.000000
 
@@ -176,7 +176,7 @@ Time Taken to execute Compromized FM:0.002000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =268168549.840033
+ TWL Calculated =264067839.433465
 
 ***********************************************************************************************
 
@@ -187,8 +187,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=308386.398851
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=140
-At End Total Number of MIV after Compromised FM=140
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=192
+Time Taken to execute Compromized FM:0.037000
 
  Total Area of all the blocks =1156449.000000
 
@@ -199,7 +199,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =268168549.840033
+ TWL Calculated =264067839.433465
 
 ***********************************************************************************************
 
@@ -210,8 +210,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=289112.250000
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=140
-At End Total Number of MIV after Compromised FM=140
-Time Taken to execute Compromized FM:0.002000
+At End Total Number of MIV after Compromised FM=192
+Time Taken to execute Compromized FM:0.038000
 
  Total Area of all the blocks =1156449.000000
 
@@ -222,7 +222,7 @@ Time Taken to execute Compromized FM:0.002000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =268168549.840033
+ TWL Calculated =264067839.433465
 
 ***********************************************************************************************
 
@@ -233,20 +233,20 @@ Total area of tiers=1156449.000000
  Min area for each tier=274656.637285
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=219
-At End Total Number of MIV after Compromised FM=219
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=277
+Time Taken to execute Compromized FM:0.053000
 
  Total Area of all the blocks =1156449.000000
 
- Divergence of tier area from avg area=-0.115461
+ Divergence of tier area from avg area=-0.135630
  Divergence of tier area from avg area=0.264692
- Divergence of tier area from avg area=-0.048684
+ Divergence of tier area from avg area=-0.028516
  Divergence of tier area from avg area=-0.100547
 
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =213285304.830410
+ TWL Calculated =204649520.728402
 
 ***********************************************************************************************
 
@@ -257,20 +257,20 @@ Total area of tiers=1156449.000000
  Min area for each tier=260201.024569
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=219
-At End Total Number of MIV after Compromised FM=219
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=277
+Time Taken to execute Compromized FM:0.054000
 
  Total Area of all the blocks =1156449.000000
 
- Divergence of tier area from avg area=-0.115461
+ Divergence of tier area from avg area=-0.135630
  Divergence of tier area from avg area=0.264692
- Divergence of tier area from avg area=-0.048684
+ Divergence of tier area from avg area=-0.028516
  Divergence of tier area from avg area=-0.100547
 
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =213285304.830410
+ TWL Calculated =204649520.728402
 
 ***********************************************************************************************
 
@@ -281,20 +281,20 @@ Total area of tiers=1156449.000000
  Min area for each tier=245745.410777
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=219
-At End Total Number of MIV after Compromised FM=219
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=277
+Time Taken to execute Compromized FM:0.057000
 
  Total Area of all the blocks =1156449.000000
 
- Divergence of tier area from avg area=-0.115461
+ Divergence of tier area from avg area=-0.135630
  Divergence of tier area from avg area=0.264692
- Divergence of tier area from avg area=-0.048684
+ Divergence of tier area from avg area=-0.028516
  Divergence of tier area from avg area=-0.100547
 
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =213285304.830410
+ TWL Calculated =204649520.728402
 
 ***********************************************************************************************
 
@@ -305,20 +305,20 @@ Total area of tiers=1156449.000000
  Min area for each tier=231289.799138
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=219
-At End Total Number of MIV after Compromised FM=219
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=277
+Time Taken to execute Compromized FM:0.056000
 
  Total Area of all the blocks =1156449.000000
 
- Divergence of tier area from avg area=-0.115461
+ Divergence of tier area from avg area=-0.135630
  Divergence of tier area from avg area=0.264692
- Divergence of tier area from avg area=-0.048684
+ Divergence of tier area from avg area=-0.028516
  Divergence of tier area from avg area=-0.100547
 
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =213285304.830410
+ TWL Calculated =204649520.728402
 
 ***********************************************************************************************
 
@@ -329,20 +329,20 @@ Total area of tiers=1156449.000000
  Min area for each tier=216834.187500
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=219
-At End Total Number of MIV after Compromised FM=219
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=277
+Time Taken to execute Compromized FM:0.051000
 
  Total Area of all the blocks =1156449.000000
 
- Divergence of tier area from avg area=-0.115461
+ Divergence of tier area from avg area=-0.135630
  Divergence of tier area from avg area=0.264692
- Divergence of tier area from avg area=-0.048684
+ Divergence of tier area from avg area=-0.028516
  Divergence of tier area from avg area=-0.100547
 
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =213285304.830410
+ TWL Calculated =204649520.728402
 
 ***********************************************************************************************
 
@@ -353,8 +353,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=219725.309828
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=181
-At End Total Number of MIV after Compromised FM=181
-Time Taken to execute Compromized FM:0.002000
+At End Total Number of MIV after Compromised FM=260
+Time Taken to execute Compromized FM:0.052000
 
  Total Area of all the blocks =1156449.000000
 
@@ -367,7 +367,7 @@ Time Taken to execute Compromized FM:0.002000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =179982729.363463
+ TWL Calculated =170019711.132090
 
 ***********************************************************************************************
 
@@ -378,8 +378,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=208160.819655
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=181
-At End Total Number of MIV after Compromised FM=181
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=260
+Time Taken to execute Compromized FM:0.051000
 
  Total Area of all the blocks =1156449.000000
 
@@ -392,7 +392,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =179982729.363463
+ TWL Calculated =170019711.132090
 
 ***********************************************************************************************
 
@@ -403,8 +403,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=196596.328621
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=181
-At End Total Number of MIV after Compromised FM=181
-Time Taken to execute Compromized FM:0.002000
+At End Total Number of MIV after Compromised FM=260
+Time Taken to execute Compromized FM:0.050000
 
  Total Area of all the blocks =1156449.000000
 
@@ -417,7 +417,7 @@ Time Taken to execute Compromized FM:0.002000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =179982729.363463
+ TWL Calculated =170019711.132090
 
 ***********************************************************************************************
 
@@ -428,8 +428,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=185031.839311
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=181
-At End Total Number of MIV after Compromised FM=181
-Time Taken to execute Compromized FM:0.001000
+At End Total Number of MIV after Compromised FM=260
+Time Taken to execute Compromized FM:0.051000
 
  Total Area of all the blocks =1156449.000000
 
@@ -442,7 +442,7 @@ Time Taken to execute Compromized FM:0.001000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =179982729.363463
+ TWL Calculated =170019711.132090
 
 ***********************************************************************************************
 
@@ -453,8 +453,8 @@ Total area of tiers=1156449.000000
  Min area for each tier=173467.350000
 Time Taken to execute Initial Partition:0.000000
 After Initial Partition Total Number of MIV=181
-At End Total Number of MIV after Compromised FM=181
-Time Taken to execute Compromized FM:0.002000
+At End Total Number of MIV after Compromised FM=260
+Time Taken to execute Compromized FM:0.051000
 
  Total Area of all the blocks =1156449.000000
 
@@ -467,4 +467,4 @@ Time Taken to execute Compromized FM:0.002000
 Total area of tiers=1156449.000000
 
 
- TWL Calculated =179982729.363463
+ TWL Calculated =170019711.132090

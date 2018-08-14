@@ -19,13 +19,13 @@ void read_blocks_ami33(FILE* fp)
                  i++;
              }
              bk_list[cnt].name[i]='\0';
-             printf("\n Block Name=%s",bk_list[cnt].name);
+             //printf("\n Block Name=%s",bk_list[cnt].name);
              int area;
              fscanf(fp,"%s%d",str,&area);
-             printf("\t Area=%d",area);
+             //printf("\t Area=%d",area);
              bk_list[cnt].area=area;
              bk_list[cnt].length=bk_list[cnt].width=sqrt(area);
-             printf("\n Block Length=%lf\t Block Width=%lf",bk_list[cnt].length,bk_list[cnt].width);
+            // printf("\n Block Length=%lf\t Block Width=%lf",bk_list[cnt].length,bk_list[cnt].width);
              bk_list[cnt].index=cnt;
              cnt++;
          }
@@ -97,6 +97,7 @@ float calculate_block_entropy(Block* bk_list,Net* net_list,int bk_index,int tier
     double twl=0;
     while(tem!=NULL)
     {
+        twl=0;
         if(bk_list[bk_index].tier==tier_no)
         {
             for(i=0;i<T;i++)
@@ -105,8 +106,15 @@ float calculate_block_entropy(Block* bk_list,Net* net_list,int bk_index,int tier
             }
             for(i=0;i<T;i++)
             {
-                double contr=net_list[tem->net_index].net_tier_com[i].total_wire_length/twl;
-                entropy+=(-1)*contr*(log(contr)/log(T));
+                double contr=(net_list[tem->net_index].net_tier_com[i].total_wire_length)/twl;
+                //printf("\n Concentration Value=%lf",contr);
+                if(contr!=0)
+                {
+                    entropy+=(-1)*contr*(log(contr)/log(T));
+                }
+                else{
+                    entropy+=0;
+                }
             }
         }
         else
@@ -129,12 +137,18 @@ float calculate_block_entropy(Block* bk_list,Net* net_list,int bk_index,int tier
                 else{
                     contr=(net_list[tem->net_index].net_tier_com[i].total_wire_length)/twl;
                 }
-                entropy+=(-1)*contr*(log(contr)/log(T));
+                if(contr!=0)
+                {
+                    entropy+=(-1)*contr*(log(contr)/log(T));
+                }
+                else{
+                    entropy+=0;
+                }
             }
         }
         tem=tem->right;
     }
-    printf("\n Entropy value=%lf",entropy);
+    //printf("\n Entropy value=%lf",entropy);
     return entropy;
 }
 
