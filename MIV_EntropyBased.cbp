@@ -49,9 +49,17 @@
 		</Unit>
 		<Unit filename="ami33.blocks" />
 		<Unit filename="ami33.nets" />
+		<Unit filename="ami49.blocks" />
+		<Unit filename="ami49.nets" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="n100.blocks" />
+		<Unit filename="n100.nets" />
+		<Unit filename="n200.blocks" />
+		<Unit filename="n200.nets" />
+		<Unit filename="n300.blocks" />
+		<Unit filename="n300.nets" />
 		<Extensions>
 			<code_completion />
 			<envvars />

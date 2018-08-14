@@ -46,15 +46,15 @@ void Compromized_FM(FILE* fp1,float** Cost,Gain* gain_list,Block* bk_list,Net* n
     }
     clock_t end_time=clock();
     printf("\n Placements Done");
-    fprintf(fp1,"\nAt End Total Number of MIV after Compromised FM=%d",claculate_MIV(net_list,N,T));
+    fprintf(fp1,"\nAt End Total Number of MIV after Compromised FM=%d",claculate_MIV(bk_list,net_list,N,T));
     double time_taken=(double)(end_time-start_time)/CLOCKS_PER_SEC;
     fprintf(fp1,"\nTime Taken to execute Compromized FM:%0.6lf",time_taken);
-    /*start_time=clock();
-    Min_area_coverage(bk_list,net_list,tier_list,B,N,T);
+    start_time=clock();
+    Area_coverage(bk_list,net_list,tier_list,B,N,T);
     end_time=clock();
-    fprintf(fp1,"\nAt End Total Number of MIV after Min area coverage=%d",claculate_MIV(net_list,N,T));
+    fprintf(fp1,"\nAt End Total Number of MIV after Min area coverage=%d",claculate_MIV(bk_list,net_list,N,T));
     time_taken=(double)(end_time-start_time)/CLOCKS_PER_SEC;
-    fprintf(fp1,"\nTime Taken to execute Min area Coverage:%0.6lf",time_taken);*/
+    fprintf(fp1,"\nTime Taken to execute Area Coverage:%0.6lf",time_taken);
    /* FILE* fp=fopen("Final_Block_Placement.txt","w");
     for(i=0;i<B;i++)
     {
@@ -174,3 +174,91 @@ int Extract_Heap(Gain* gain_list,Block* bk_list,int* heap_size)
     Max_Heapify_Gain(gain_list,bk_list,0,heap_size[0]);
     return (heap_size[0]+1);
 }
+
+void Area_coverage(Block* bk_list,Net* net_list,Tier* tier_list,int B,int N,int T)
+{
+    int i;
+    for(i=0;i<T;i++)
+    {
+        if(tier_list[i].area_consumed<tier_list[i].min_area)
+        {
+            Min_Area_Coverage(bk_list,net_list,tier_list,B,N,T,i);
+        }
+    }
+}
+/*        while(tier_list[i].area_consumed>tier_list[i].max_area || tier_list[i].area_consumed<tier_list[i].min_area)
+        {
+            calculate_net_distribution(net_list,bk_list,B,N,T);
+            for(j=0;j<B;j++)
+            {
+                bk_list[j].Current_Entropy=calculate_block_entropy(bk_list,net_list,j,bk_list[i].tier,T);
+            }
+            for(j=0;j<B;j++)
+            {
+                Cost[j]=calculate_block_entropy(bk_list,net_list,j,i,T);
+            }
+            calculate_tier_gain_list(Cost,bk_list,gain_list,B);
+            if(tier_list[i].area_consumed>tier_list[i].max_area)
+            {
+
+            }
+        }
+    }
+}
+*/
+
+void Min_Area_Coverage(Block* bk_list,Net* net_list,Tier* tier_list,int B,int N,int T,int tier_no)
+{
+    int j;
+    int* heap_size=(int*)calloc(1,sizeof(int));
+    float* Cost=(float*)calloc(B,sizeof(float));
+    Gain* gain_list=(Gain*)calloc(B,sizeof(Gain));
+    calculate_net_distribution(net_list,bk_list,B,N,T);
+    for(j=0;j<B;j++)
+    {
+        bk_list[j].Current_Entropy=calculate_block_entropy(bk_list,net_list,j,bk_list[j].tier,T);
+    }
+    for(j=0;j<B;j++)
+    {
+        Cost[j]=calculate_block_entropy(bk_list,net_list,j,tier_no,T);
+    }
+    calculate_tier_gain_list(Cost,bk_list,gain_list,B);
+    heap_size[0]=B-1;
+    build_gain_heap(gain_list,bk_list,heap_size[0]);
+    int ret_index=Extract_Heap(gain_list,bk_list,heap_size);
+    Gain ele=gain_list[ret_index];
+    while(tier_list[tier_no].area_consumed<tier_list[tier_no].min_area && ret_index>=0)
+    {
+        int pre_tier=bk_list[ele.bk_index].tier;
+        if(pre_tier!=tier_no && tier_list[pre_tier].area_consumed-bk_list[ele.bk_index].area>=tier_list[pre_tier].min_area)
+        {
+            place_block(tier_list,bk_list,ele.bk_index,tier_no,pre_tier);
+            Net_Component* tem=bk_list[ele.bk_index].net_ptr;
+            while(tem!=NULL)
+            {
+                update_net_list(net_list,bk_list,tem->net_index,ele.bk_index,tier_no,pre_tier);
+                tem=tem->right;
+            }
+            calculate_net_distribution(net_list,bk_list,B,N,T);
+            for(j=0;j<B;j++)
+            {
+                bk_list[j].Current_Entropy=calculate_block_entropy(bk_list,net_list,j,bk_list[j].tier,T);
+            }
+            for(j=0;j<B;j++)
+            {
+                Cost[j]=calculate_block_entropy(bk_list,net_list,j,tier_no,T);
+            }
+            calculate_tier_gain_list(Cost,bk_list,gain_list,B);
+            heap_size[0]=B-1;
+            build_gain_heap(gain_list,bk_list,heap_size[0]);
+        }
+        ret_index=Extract_Heap(gain_list,bk_list,heap_size);
+        if(ret_index<0)
+        {
+            break;
+        }
+        ele=gain_list[ret_index];
+    }
+}
+
+

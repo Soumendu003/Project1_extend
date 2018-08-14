@@ -41,6 +41,84 @@ void read_blocks_ami33(FILE* fp)
     return;
 }
 
+void Read_Hard_Blocks(FILE* fp1)
+{
+    int i,j,k,B,T,cnt=0;
+    char* str=(char*)calloc(50,sizeof(char));
+    fscanf(fp1,"%d",&B);
+    printf("\n No of Blocks=%d",B);
+    Block* bk_list=(Block*)calloc(B,sizeof(Block));
+    fscanf(fp1,"%d",&T);
+    while(cnt<B)
+    {
+         fscanf(fp1,"%s",str);
+         if(str[0]=='s' && str[1]=='b')
+         {
+             i=0;
+             while(str[i+2]!='\0')
+             {
+                 bk_list[cnt].name[i]=str[i+2];
+                 i++;
+             }
+             bk_list[cnt].name[i]='\0';
+             printf("\n Block Name=%s",bk_list[cnt].name);
+             int area;
+             fscanf(fp1,"%s%d",str,&area);
+             //printf("\t Area=%d",area);
+             fscanf(fp1,"%[^\n]",str);
+             printf("\n String=%s",str);
+             j=0;
+             k=0;
+             while(str[j]!='\0')
+             {
+                 if(str[j]=='(')
+                 {
+                     if(k==2)
+                     {
+                         j++;
+                         int val=0;
+                         while(str[j]!=',')
+                         {
+                             val=val*10+(str[j]-48);
+                             j++;
+                         }
+                         bk_list[cnt].length=val;
+                         j+=2;
+                         val=0;
+                         while(str[j]!=')')
+                         {
+                             val=val*10+(str[j]-48);
+                             j++;
+                         }
+                         bk_list[cnt].width=val;
+                         break;
+                     }
+                     else{
+                        k++;
+                     }
+                 }
+                 j++;
+             }
+             printf("\n Block Length=%lf\t Block Width=%lf",bk_list[cnt].length,bk_list[cnt].width);
+             bk_list[cnt].area=(bk_list[cnt].length)*(bk_list[cnt].width);
+             printf("\t Block Area=%lf",bk_list[cnt].area);
+             bk_list[cnt].index=cnt;
+             cnt++;
+         }
+    }
+    //free(str);
+    fclose(fp1);
+    for(i=0;i<B;i++)
+    {
+        bk_list[i].index=i;
+    }
+    fp1=fopen("n300.nets","r");
+    Read_Hard_Nets(fp1,bk_list,B);
+    fclose(fp1);
+    return;
+}
+
+
 void free_block_component(Block_Component* ele)
 {
     if(ele->right!=NULL)
@@ -192,6 +270,16 @@ void calculate_gain_list(float** Cost,Gain* gain_list,Block* bk_list,int B,int T
             gain_list[k].gain_value=Cost[i][j]-bk_list[i].Current_Entropy;
             k++;
         }
+    }
+}
+
+void calculate_tier_gain_list(float* Cost,Block* bk_list,Gain* gain_list,int B)
+{
+    int i;
+    for(i=0;i<B;i++)
+    {
+        gain_list[i].bk_index=i;
+        gain_list[i].gain_value=Cost[i]-bk_list[i].Current_Entropy;
     }
 }
 

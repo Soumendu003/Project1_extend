@@ -1,9 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include"Header.h"
 int main()
 {
-    FILE* fp=fopen("ami33.blocks","r");
-    read_blocks_ami33(fp);
+    FILE* fp=fopen("n300.blocks","r");
+    Read_Hard_Blocks(fp);
     return 0;
 }

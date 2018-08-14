@@ -1,7 +1,7 @@
 #include"Header.h"
 void Secondary_Partition(FILE* fp1,Net* net_list,Block* bk_list,Tier* tr_list,int N,int B,int T)
 {
-    int i,j,k;
+    int i,j;
     float** Cost=(float**)calloc(B,sizeof(float*));
     printf("\n Cost Declared");
     calculate_net_distribution(net_list,bk_list,B,N,T);

@@ -102,6 +102,114 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
 
 }
 
+void Read_Hard_Nets(FILE* fp1,Block* bk_list,int B)
+{
+    int i,j,N,tot_pin,deg,cnt=0;
+    fscanf(fp1,"%d",&N);
+    fscanf(fp1,"%d",&tot_pin);
+    printf("\n No of Net=%d\tNo of Pin=%d",N,tot_pin);
+    Net* net_list=(Net*)calloc(N,sizeof(Net));
+    char* str=(char*)calloc(50,sizeof(char));
+    while(cnt<N)
+    {
+        if(feof(fp1))
+        {
+            break;
+        }
+        fscanf(fp1,"%s",str);
+        if(str[0]=='N' && str[1]=='e')
+        {
+            fscanf(fp1,"%s%d",str,&deg);
+            net_list[cnt].no_of_bk=0;
+            net_list[cnt].degree=deg;
+            i=0;
+            while(i<deg)
+            {
+                fscanf(fp1,"%s",str);
+                if(str[0]=='s' && str[1]=='b')
+                {
+                    printf("\n Pin Detected=%s",str);
+                    i++;
+                    net_list[cnt].no_of_bk++;
+                    j=0;
+                    char name[20];
+                    int val=0;
+                    //strcpy(name,str);
+                    while(str[j+2]!='\0')
+                    {
+                        val=val*10+(str[j+2]-48);
+                        name[j]=str[j+2];
+                        j++;
+                    }
+                    name[j]='\0';
+                    printf("\n Name of the Block=%s",name);
+                    j=val;
+                    //j=search_block(bk_list,0,B-1,name);
+                    printf("\n Value of j=%d",j);
+                    insert_bk_component(net_list,cnt,j);
+                    printf("\n Insertion Done");
+                }
+                else if(str[0]=='G')
+                {
+                    i++;
+                    net_list[cnt].gnd=true;
+                }
+                else if(str[0]=='P')
+                {
+                    i++;
+
+                    net_list[cnt].pwr=true;
+                }
+                else if(str[0]=='V')
+                {
+                    i++;
+                    net_list[cnt].V=true;
+                }
+                else if(str[0]=='N')
+                {
+                    i++;
+                    printf("\n Pad Detected");
+                    net_list[cnt].pad=true;
+                }
+            }
+            cnt++;
+        }
+    }
+    printf("\n Reading Done");
+    for(i=0;i<N;i++)
+    {
+        Block_Component* tem=net_list[i].bk_ptr;
+        while(tem!=NULL)
+        {
+            insert_net_component(bk_list,tem->bk_index,i);
+            tem=tem->right;
+        }
+    }
+    printf("\n Net components inserted");
+    float relaxation=0.05;
+    FILE* fp=fopen("n300_output_entropy.txt","w");
+    for(j=2;j<=5;j++)
+    {
+        for(i=1;i<=5;i++)
+        {
+            Initial_Partition(fp,bk_list,net_list,B,N,j,i*relaxation);
+        }
+    }
+    for(i=0;i<N;i++)
+    {
+        free_block_components(net_list[i]);
+
+    }
+    for(i=0;i<B;i++)
+    {
+        free_net_components(bk_list[i]);
+    }
+    free(net_list);
+    free(bk_list);
+    return;
+
+}
+
 void free_net_components(Block ele)
 {
     Net_Component* tem=ele.net_ptr;
@@ -239,12 +347,41 @@ void update_net_list(Net* net_list,Block* bk_list,int net_index,int bk_index,int
 
 }
 
-int claculate_MIV(Net* net_list,int N,int T)
+int claculate_MIV(Block* bk_list,Net* net_list,int N,int T)
 {
     int i,MIV=0;
     for(i=0;i<N;i++)
     {
-        MIV+=net_list[i].top_tier.tier_index-net_list[i].low_tier.tier_index;
+        int least_tier,top_tier=-1;
+        Block_Component* tem=net_list[i].bk_ptr;
+        if(tem!=NULL)
+        {
+            least_tier=bk_list[tem->bk_index].tier;
+            top_tier=bk_list[tem->bk_index].tier;
+        }
+        while(tem!=NULL)
+        {
+            if(least_tier>bk_list[tem->bk_index].tier)
+            {
+                least_tier=bk_list[tem->bk_index].tier;
+            }
+            if(top_tier<bk_list[tem->bk_index].tier)
+            {
+                top_tier=bk_list[tem->bk_index].tier;
+            }
+            tem=tem->right;
+        }
+        if(net_list[i].gnd || net_list[i].V || net_list[i].pwr || net_list[i].pad)
+        {
+            least_tier=0;
+        }
+        if(top_tier>=0)
+        {
+            MIV+=(top_tier-least_tier);
+        }
+        else{
+            MIV+=0;
+        }
     }
     return MIV;
 }
