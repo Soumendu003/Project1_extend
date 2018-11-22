@@ -46,10 +46,10 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
                     i++;
                     net_list[cnt].gnd=true;
                 }
-                else if(str[0]=='P')
+                else if(str[0]=='P' || str[0]=='p')
                 {
                     i++;
-
+                    //printf("\n Pad DETECTED");
                     net_list[cnt].pwr=true;
                 }
                 else if(str[0]=='V')
@@ -79,7 +79,7 @@ void read_nets_ami33(FILE* fp1,Block* bk_list,int B)
     }
     printf("\n Net components inserted");
     float relaxation=0.05;
-    FILE* fp=fopen("ami33_output_entropy.txt","w");
+    FILE* fp=fopen("ami33_final_output.txt","w");
     for(j=2;j<=5;j++)
     {
         for(i=1;i<=5;i++)
@@ -126,9 +126,9 @@ void Read_Hard_Nets(FILE* fp1,Block* bk_list,int B)
             while(i<deg)
             {
                 fscanf(fp1,"%s",str);
-                if(str[0]=='s' && str[1]=='b')
+                if(/*str[0]=='s' && str[1]=='b')//(*/str[0]=='M')
                 {
-                    printf("\n Pin Detected=%s",str);
+                    //printf("\n Pin Detected=%s",str);
                     i++;
                     net_list[cnt].no_of_bk++;
                     j=0;
@@ -142,22 +142,22 @@ void Read_Hard_Nets(FILE* fp1,Block* bk_list,int B)
                         j++;
                     }
                     name[j]='\0';
-                    printf("\n Name of the Block=%s",name);
-                    j=val;
+                    //printf("\n Name of the Block=%s",name);
+                    j=val-1;
                     //j=search_block(bk_list,0,B-1,name);
-                    printf("\n Value of j=%d",j);
+                    //printf("\n Value of j=%d",j);
                     insert_bk_component(net_list,cnt,j);
-                    printf("\n Insertion Done");
+                    //printf("\n Insertion Done");
                 }
                 else if(str[0]=='G')
                 {
                     i++;
                     net_list[cnt].gnd=true;
                 }
-                else if(str[0]=='P')
+                else if(str[0]=='P' || str[0]=='p')
                 {
                     i++;
-
+                    //printf("\n Pad DETECTED");
                     net_list[cnt].pwr=true;
                 }
                 else if(str[0]=='V')
@@ -168,7 +168,7 @@ void Read_Hard_Nets(FILE* fp1,Block* bk_list,int B)
                 else if(str[0]=='N')
                 {
                     i++;
-                    printf("\n Pad Detected");
+                    //printf("\n Pad Detected");
                     net_list[cnt].pad=true;
                 }
             }
@@ -187,7 +187,7 @@ void Read_Hard_Nets(FILE* fp1,Block* bk_list,int B)
     }
     printf("\n Net components inserted");
     float relaxation=0.05;
-    FILE* fp=fopen("n300_output_entropy.txt","w");
+    FILE* fp=fopen("ami49_final_shuffled_output_new.txt","w");
     for(j=2;j<=5;j++)
     {
         for(i=1;i<=5;i++)
@@ -404,7 +404,7 @@ void calculate_net_distribution(Net* net_list,Block* bk_list,int B,int N,int T)
            arr[j]=0;
         }
     }
-    printf("\n Calculations Done");
+    //printf("\n Calculations Done");
     free(arr);
     return;
 }

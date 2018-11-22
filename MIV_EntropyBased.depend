@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1534277064 source:d:\miv_entropybased\main.c
+1542912654 source:d:\miv_entropybased\main.c
 	"Header.h"
 
-1534281373 source:d:\miv_entropybased\read_blocks.c
+1542918166 source:d:\miv_entropybased\read_blocks.c
 	"Header.h"
 
-1534282043 d:\miv_entropybased\header.h
+1538847025 d:\miv_entropybased\header.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -14,15 +14,15 @@
 	<time.h>
 	<math.h>
 
-1534281373 source:d:\miv_entropybased\secondary_partition.c
+1538846983 source:d:\miv_entropybased\secondary_partition.c
 	"Header.h"
 
-1534282056 source:d:\miv_entropybased\initial_partition.c
+1538847477 source:d:\miv_entropybased\initial_partition.c
 	"Header.h"
 
-1534282039 source:d:\miv_entropybased\compromized_fm.c
+1542912374 source:d:\miv_entropybased\compromized_fm.c
 	"Header.h"
 
-1534281997 source:d:\miv_entropybased\read_nets.c
+1542918166 source:d:\miv_entropybased\read_nets.c
 	"Header.h"
 

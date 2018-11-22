@@ -1,5 +1,5 @@
 #include"Header.h"
-void Secondary_Partition(FILE* fp1,Net* net_list,Block* bk_list,Tier* tr_list,int N,int B,int T)
+void Secondary_Partition(FILE* fp1,int** Degree,Net* net_list,Block* bk_list,Tier* tr_list,int N,int B,int T)
 {
     int i,j;
     float** Cost=(float**)calloc(B,sizeof(float*));
@@ -39,7 +39,8 @@ void Secondary_Partition(FILE* fp1,Net* net_list,Block* bk_list,Tier* tr_list,in
         }
     }
     fclose(fp);*/
-    Compromized_FM(fp1,Cost,gain_list,bk_list,net_list,tr_list,B,N,T);
+    printf("\n Going to call CMFM");
+    Compromized_FM(fp1,Degree,Cost,gain_list,bk_list,net_list,tr_list,B,N,T);
     printf("\n Gain_list going to be freed");
     free(gain_list);
     for(i=0;i<B;i++)

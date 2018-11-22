@@ -1,0 +1,530 @@
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=2	 Relaxation Percentage=0.050000
+ Avg area for each tier=136585.000000
+ Max area for each tier=143414.250102
+ Min area for each tier=129755.749898
+Time Taken to execute Initial Partition:0.561000
+After Initial Partition Total Number of MIV=1428
+Time Taken to execute Compromized FM:1.097000
+At End Total Number of MIV after Compromised FM=1415
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.075872
+ Divergence of tier area from avg area=0.075872
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=19333830.000000
+
+
+ TWL Calculated After Compromised FM =19333830.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=2	 Relaxation Percentage=0.100000
+ Avg area for each tier=136585.000000
+ Max area for each tier=150243.500204
+ Min area for each tier=122926.499796
+Time Taken to execute Initial Partition:0.565000
+After Initial Partition Total Number of MIV=1428
+Time Taken to execute Compromized FM:0.850000
+At End Total Number of MIV after Compromised FM=1450
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.120789
+ Divergence of tier area from avg area=0.120789
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=19242872.000000
+
+
+ TWL Calculated After Compromised FM =19242872.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=2	 Relaxation Percentage=0.150000
+ Avg area for each tier=136585.000000
+ Max area for each tier=157072.750814
+ Min area for each tier=116097.249186
+Time Taken to execute Initial Partition:0.560000
+After Initial Partition Total Number of MIV=1428
+Time Taken to execute Compromized FM:0.317000
+At End Total Number of MIV after Compromised FM=1459
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.156547
+ Divergence of tier area from avg area=0.156547
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=19264696.000000
+
+
+ TWL Calculated After Compromised FM =19264696.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=2	 Relaxation Percentage=0.200000
+ Avg area for each tier=136585.000000
+ Max area for each tier=163902.000407
+ Min area for each tier=109267.999593
+Time Taken to execute Initial Partition:0.682000
+After Initial Partition Total Number of MIV=1428
+Time Taken to execute Compromized FM:0.343000
+At End Total Number of MIV after Compromised FM=1461
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.163612
+ Divergence of tier area from avg area=0.163612
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=19279284.000000
+
+
+ TWL Calculated After Compromised FM =19279284.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=2	 Relaxation Percentage=0.250000
+ Avg area for each tier=136585.000000
+ Max area for each tier=170731.250000
+ Min area for each tier=102438.750000
+Time Taken to execute Initial Partition:0.573000
+After Initial Partition Total Number of MIV=1428
+Time Taken to execute Compromized FM:0.258000
+At End Total Number of MIV after Compromised FM=1461
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.163612
+ Divergence of tier area from avg area=0.163612
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=19279284.000000
+
+
+ TWL Calculated After Compromised FM =19279284.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=3	 Relaxation Percentage=0.050000
+ Avg area for each tier=91056.666667
+ Max area for each tier=95609.500068
+ Min area for each tier=86503.833265
+Time Taken to execute Initial Partition:0.561000
+After Initial Partition Total Number of MIV=2373
+Time Taken to execute Compromized FM:0.508000
+At End Total Number of MIV after Compromised FM=2457
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.037149
+ Divergence of tier area from avg area=-0.013757
+ Divergence of tier area from avg area=0.050906
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=16426436.000000
+
+
+ TWL Calculated After Compromised FM =16426436.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=3	 Relaxation Percentage=0.100000
+ Avg area for each tier=91056.666667
+ Max area for each tier=100162.333469
+ Min area for each tier=81950.999864
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=2373
+Time Taken to execute Compromized FM:0.469000
+At End Total Number of MIV after Compromised FM=2455
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.039938
+ Divergence of tier area from avg area=0.083951
+ Divergence of tier area from avg area=-0.044013
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=16424652.000000
+
+
+ TWL Calculated After Compromised FM =16424652.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=3	 Relaxation Percentage=0.150000
+ Avg area for each tier=91056.666667
+ Max area for each tier=104715.167209
+ Min area for each tier=77398.166124
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=2373
+Time Taken to execute Compromized FM:0.400000
+At End Total Number of MIV after Compromised FM=2455
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.072786
+ Divergence of tier area from avg area=0.114701
+ Divergence of tier area from avg area=-0.041915
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=16424652.000000
+
+
+ TWL Calculated After Compromised FM =16424652.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=3	 Relaxation Percentage=0.200000
+ Avg area for each tier=91056.666667
+ Max area for each tier=109268.000271
+ Min area for each tier=72845.333062
+Time Taken to execute Initial Partition:0.562000
+After Initial Partition Total Number of MIV=2373
+Time Taken to execute Compromized FM:0.397000
+At End Total Number of MIV after Compromised FM=2455
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.072786
+ Divergence of tier area from avg area=0.114701
+ Divergence of tier area from avg area=-0.041915
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=16424652.000000
+
+
+ TWL Calculated After Compromised FM =16424652.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=3	 Relaxation Percentage=0.250000
+ Avg area for each tier=91056.666667
+ Max area for each tier=113820.833333
+ Min area for each tier=68292.500000
+Time Taken to execute Initial Partition:0.559000
+After Initial Partition Total Number of MIV=2373
+Time Taken to execute Compromized FM:0.400000
+At End Total Number of MIV after Compromised FM=2455
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.072786
+ Divergence of tier area from avg area=0.114701
+ Divergence of tier area from avg area=-0.041915
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=16424652.000000
+
+
+ TWL Calculated After Compromised FM =16424652.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=4	 Relaxation Percentage=0.050000
+ Avg area for each tier=68292.500000
+ Max area for each tier=71707.125051
+ Min area for each tier=64877.874949
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=3359
+Time Taken to execute Compromized FM:1.989000
+At End Total Number of MIV after Compromised FM=3387
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.049134
+ Divergence of tier area from avg area=0.176820
+ Divergence of tier area from avg area=-0.149541
+ Divergence of tier area from avg area=0.021855
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=15288852.000000
+
+
+ TWL Calculated After Compromised FM =15288852.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=4	 Relaxation Percentage=0.100000
+ Avg area for each tier=68292.500000
+ Max area for each tier=75121.750102
+ Min area for each tier=61463.249898
+Time Taken to execute Initial Partition:0.557000
+After Initial Partition Total Number of MIV=3359
+Time Taken to execute Compromized FM:1.436000
+At End Total Number of MIV after Compromised FM=3382
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.049500
+ Divergence of tier area from avg area=0.154138
+ Divergence of tier area from avg area=-0.125863
+ Divergence of tier area from avg area=0.021225
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=15287594.000000
+
+
+ TWL Calculated After Compromised FM =15287594.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=4	 Relaxation Percentage=0.150000
+ Avg area for each tier=68292.500000
+ Max area for each tier=78536.375407
+ Min area for each tier=58048.624593
+Time Taken to execute Initial Partition:0.556000
+After Initial Partition Total Number of MIV=3359
+Time Taken to execute Compromized FM:0.666000
+At End Total Number of MIV after Compromised FM=3367
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.033745
+ Divergence of tier area from avg area=0.141341
+ Divergence of tier area from avg area=-0.143142
+ Divergence of tier area from avg area=-0.031943
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=15301106.000000
+
+
+ TWL Calculated After Compromised FM =15301106.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=4	 Relaxation Percentage=0.200000
+ Avg area for each tier=68292.500000
+ Max area for each tier=81951.000204
+ Min area for each tier=54633.999796
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=3359
+Time Taken to execute Compromized FM:0.461000
+At End Total Number of MIV after Compromised FM=3371
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.069708
+ Divergence of tier area from avg area=0.195929
+ Divergence of tier area from avg area=-0.122861
+ Divergence of tier area from avg area=-0.142776
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=15318796.000000
+
+
+ TWL Calculated After Compromised FM =15318796.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=4	 Relaxation Percentage=0.250000
+ Avg area for each tier=68292.500000
+ Max area for each tier=85365.625000
+ Min area for each tier=51219.375000
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=3359
+Time Taken to execute Compromized FM:0.419000
+At End Total Number of MIV after Compromised FM=3376
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.069708
+ Divergence of tier area from avg area=0.206736
+ Divergence of tier area from avg area=-0.138968
+ Divergence of tier area from avg area=-0.137475
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=15319906.000000
+
+
+ TWL Calculated After Compromised FM =15319906.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=5	 Relaxation Percentage=0.050000
+ Avg area for each tier=54634.000000
+ Max area for each tier=57365.700041
+ Min area for each tier=51902.299959
+Time Taken to execute Initial Partition:0.562000
+After Initial Partition Total Number of MIV=4138
+Time Taken to execute Compromized FM:1.142000
+At End Total Number of MIV after Compromised FM=4228
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.119285
+ Divergence of tier area from avg area=0.095234
+ Divergence of tier area from avg area=-0.020061
+ Divergence of tier area from avg area=0.085990
+ Divergence of tier area from avg area=-0.041879
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=14823908.000000
+
+
+ TWL Calculated After Compromised FM =14823908.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=5	 Relaxation Percentage=0.100000
+ Avg area for each tier=54634.000000
+ Max area for each tier=60097.400081
+ Min area for each tier=49170.599919
+Time Taken to execute Initial Partition:0.558000
+After Initial Partition Total Number of MIV=4138
+Time Taken to execute Compromized FM:0.604000
+At End Total Number of MIV after Compromised FM=4206
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=-0.016107
+ Divergence of tier area from avg area=0.107827
+ Divergence of tier area from avg area=-0.081652
+ Divergence of tier area from avg area=0.072867
+ Divergence of tier area from avg area=-0.082934
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=14820874.000000
+
+
+ TWL Calculated After Compromised FM =14820874.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=5	 Relaxation Percentage=0.150000
+ Avg area for each tier=54634.000000
+ Max area for each tier=62829.100326
+ Min area for each tier=46438.899674
+Time Taken to execute Initial Partition:0.561000
+After Initial Partition Total Number of MIV=4138
+Time Taken to execute Compromized FM:0.596000
+At End Total Number of MIV after Compromised FM=4197
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.019072
+ Divergence of tier area from avg area=0.226544
+ Divergence of tier area from avg area=-0.153750
+ Divergence of tier area from avg area=0.023612
+ Divergence of tier area from avg area=-0.115478
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=14820874.000000
+
+
+ TWL Calculated After Compromised FM =14820874.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=5	 Relaxation Percentage=0.200000
+ Avg area for each tier=54634.000000
+ Max area for each tier=65560.800163
+ Min area for each tier=43707.199837
+Time Taken to execute Initial Partition:0.562000
+After Initial Partition Total Number of MIV=4138
+Time Taken to execute Compromized FM:0.462000
+At End Total Number of MIV after Compromised FM=4199
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.193945
+ Divergence of tier area from avg area=0.147820
+ Divergence of tier area from avg area=-0.174196
+ Divergence of tier area from avg area=-0.011733
+ Divergence of tier area from avg area=-0.155837
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=14828660.000000
+
+
+ TWL Calculated After Compromised FM =14828660.000000
+
+***********************************************************************************************
+
+***********************************************************************************************
+ No of Tiers=5	 Relaxation Percentage=0.250000
+ Avg area for each tier=54634.000000
+ Max area for each tier=68292.500000
+ Min area for each tier=40975.500000
+Time Taken to execute Initial Partition:0.560000
+After Initial Partition Total Number of MIV=4138
+Time Taken to execute Compromized FM:0.435000
+At End Total Number of MIV after Compromised FM=4212
+
+ Total Area of all the blocks =273170.000000
+
+ Divergence of tier area from avg area=0.211370
+ Divergence of tier area from avg area=0.147820
+ Divergence of tier area from avg area=-0.194055
+ Divergence of tier area from avg area=0.016748
+ Divergence of tier area from avg area=-0.181883
+
+Total area of tiers=273170.000000
+
+
+ TWL Calculated After Compromised FM by COST_LOG=14828660.000000
+
+
+ TWL Calculated After Compromised FM =14828660.000000
